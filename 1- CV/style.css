@@ -1,0 +1,96 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-links{
+    width: 100%;
+    display: flex;
+}
+
+.social-links .socials {
+    font-size: 0.9em;
+    margin: 0.5em;
+    padding-inline: 0.5em;
+}
+
+.socials a {
+    text-decoration: underline;
+}
+
+.socials:not(:last-child){
+    border-right: 2px solid black;
+}
+
+.education-container{
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.education-information{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block: 1em;
+    flex-direction: column;
+    border-top: 2px solid black;
+    gap: 1em;
+    padding-inline: 1.5em;
+}
+.qualification{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+.degree{
+    font-size: 0.9em;
+    font-style: italic;
+}
+.duration-info{
+    text-align: right;
+}
+.graduation-date{
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.7;
+} 
