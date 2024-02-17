@@ -17,8 +17,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 2rem;
     font-family:'Times New Roman', Times, serif;
+    margin-top: 3em;
 }
 
 .main-container{
@@ -89,8 +89,56 @@ body{
 .duration-info{
     text-align: right;
 }
-.graduation-date{
+.date{
     font-size: 0.8em;
     font-style: italic;
     opacity: 0.7;
 } 
+.experience-container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-inline: 3em;
+
+}
+.sub-exp{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.exp-whereabouts{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.experience-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block: 1em;
+    flex-direction: column;
+    gap: 1em;
+    padding-inline: 1.5em;
+}
+.experience-container:first-child{
+    border-top: 2px solid black;
+}
+.experience-1{
+    width: 100%;
+}
+.experience-description{
+    padding-inline: 2.5em;
+    padding-block: 1em;
+}
+.experience-1 li{
+    list-style:disc;
+}
+.align-space-between{
+    display: flex;
+    justify-content: space-between;
+}
