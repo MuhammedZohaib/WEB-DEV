@@ -11,15 +11,18 @@ a {
 li{
     list-style: none;
 }
+html{
+    background-color: #525659;
+}
 
 body{
-    width: 70%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     font-family:'Times New Roman', Times, serif;
-    margin-top: 3em;
+    background-color: #fff;
 }
 
 .main-container{
@@ -28,6 +31,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-block: 5em;
+
 }
 
 .user-info-container{
@@ -172,14 +177,34 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.5em;
+    padding: 0.4em 1.5em;
 }
 .project-info{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.project-description{
+    padding-block: 1em 0.1em;
+}
 .project-description .description{
     margin-inline: 2.5em;
     list-style: disc;
+}
+.Technical-Skills-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sub-technicall-skills{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 2px solid black;
+    padding-inline: 2.5em;
+    padding-block: 1em;
 }
