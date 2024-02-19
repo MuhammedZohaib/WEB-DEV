@@ -1,0 +1,210 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    background-color: #525659;
+}
+
+body{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #fff;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 5em;
+
+}
+
+.user-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-links{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-links .socials {
+    font-size: 0.9em;
+    margin: 0.1em;
+    padding-inline: 0.3em;
+}
+
+.socials a {
+    text-decoration: underline;
+}
+
+.socials:not(:last-child){
+    border-right: 2px solid black;
+}
+
+.education-container{
+    width: 100%;
+    padding: 0.2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.education-information{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block: 1em;
+    flex-direction: column;
+    border-top: 2px solid black;
+    gap: 1em;
+    padding-inline: 1.5em;
+}
+.qualification{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+.degree{
+    font-size: 0.9em;
+    font-style: italic;
+}
+.duration-info{
+    text-align: right;
+}
+.date{
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.7;
+} 
+.experience-container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-inline: 3em;
+
+}
+.sub-exp{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.exp-whereabouts{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.experience-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block: 0.3em;
+    flex-direction: column;
+    padding-inline: 1.5em;
+}
+.experience-container:first-child{
+    border-top: 2px solid black;
+}
+.experience-1{
+    width: 100%;
+}
+.exp-location{
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.7;
+}
+.experience-description{
+    padding-inline: 2.5em;
+    padding-block: 1em 0.1em;
+}
+.experience-1 li{
+    list-style:disc;
+}
+.align-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.Project-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sub-project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 2px solid black;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4em 1.5em;
+}
+.project-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-description{
+    padding-block: 1em 0.1em;
+}
+.project-description .description{
+    margin-inline: 2.5em;
+    list-style: disc;
+}
+.Technical-Skills-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sub-technicall-skills{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 2px solid black;
+    padding-inline: 2.5em;
+    padding-block: 1em;
+}
