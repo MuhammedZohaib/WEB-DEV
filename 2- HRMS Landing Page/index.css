@@ -225,6 +225,7 @@ a {
   align-items: center;
   flex-direction: column;
   background-color: #121212;
+  padding-block: 2rem;
 }
 .our-services-typos {
   width: 100%;
@@ -289,7 +290,6 @@ a {
 }
 .service-heading {
   width: 15ch;
-  font-weight: 400;
   font-size: 1.3rem;
 }
 .service-card-heading {
@@ -317,8 +317,107 @@ a {
 }
 .arrow-right {
   position: absolute;
-  top: -0.2rem;
-  margin-left: 0.1rem;
+  top: -0.08rem;
+  margin-left: 0.12rem;
+  width: 20px;
+  height: 20px;
+}
+.arrow-left {
+  position: absolute;
+  rotate: 270deg;
+  width: 20px;
+  height: 20px;
+}
+#card8 > p {
+  width: 12ch;
+}
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  padding-block: 2rem;
+}
+.form-headings-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.2rem;
+}
+.form-heading-suptitle {
+  font-weight: 400;
+  color: #7f28ec;
+  font-size: 1rem;
+}
+.form-heading {
+  font-size: 1.5rem;
+}
+.form-headings-container > p {
+  opacity: 0.8;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.form-container {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+  flex-direction: column;
+  background-color: #222222;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+.inner-form-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.inner-form-text h3 {
+  font-size: 1rem;
+}
+.inner-form-text p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  opacity: 0.8;
+}
+.contant-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+.input-field {
+  width: 19rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: #161616;
+  border-radius: 1rem;
+  color: #fff;
+}
+.input-field:focus {
+  border: 1px solid #7f28ec;
+  outline: 0;
+  outline-style: none;
+  outline-color: transparent;
+}
+#message-area {
+  height: 10rem;
+  padding: 1rem;
+}
+.contact-form-image {
+  width: 80%;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 @media (min-width: 768px) {
   .header-container {

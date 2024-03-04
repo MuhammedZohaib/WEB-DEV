@@ -23,5 +23,7 @@
   "bugs": {
     "url": "https://github.com/MuhammedZohaib/WEB-DEV/issues"
   },
-  "homepage": "https://github.com/MuhammedZohaib/WEB-DEV#readme"
+  "homepage": "https://github.com/MuhammedZohaib/WEB-DEV#readme",
+  "dependencies": {
+  }
 }
