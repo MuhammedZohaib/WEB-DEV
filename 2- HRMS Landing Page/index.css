@@ -30,13 +30,13 @@ body {
   justify-content: space-between;
   padding: 0.5rem;
 }
-.logo {
+.header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
-.logo > h3 {
+.header-logo > h3 {
   font-style: italic;
 }
 .nav-bar > button {
@@ -390,7 +390,6 @@ a {
 }
 .contant-form {
   display: flex;
-  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
@@ -493,12 +492,13 @@ a {
     padding: 1rem 0;
     justify-content: center;
     align-items: center;
+    flex-grow: grow;
   }
   .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40rem;
+    width: 30rem;
     top: 0.7rem;
     right: 2rem;
     box-shadow: none;
@@ -527,9 +527,8 @@ a {
   .hero-section-container > img {
     right: 0;
     top: 0;
-    width: fit-content;
+    width: 300px;
   }
-
   .hero-section-container-typos-suptitle {
     font-size: 1rem;
   }
@@ -538,6 +537,30 @@ a {
   }
   .hero-section-container-typos-text {
     font-size: 1rem;
-    width: 55ch;
+  }
+  .why-choose-us-container {
+    background-position: 30rem;
+  }
+  .why-choose-us-reasons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .our-services {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .service-card {
+    width: 45%;
+  }
+  .service-cards-container {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .our-services-typos {
+    width: 30rem;
+    padding-left: 1rem;
+  }
+  .contact-form-container {
   }
 }
