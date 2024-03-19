@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .header-container {
@@ -30,13 +31,13 @@ body {
   justify-content: space-between;
   padding: 0.5rem;
 }
-.logo {
+.header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
-.logo > h3 {
+.header-logo > h3 {
   font-style: italic;
 }
 .nav-bar > button {
@@ -194,7 +195,9 @@ a {
   text-align: center;
 }
 .card:hover {
-  transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 100px 1px rgba(128, 40, 236, 0.4);
+  -moz-box-shadow: 0px 0px 100px 1px rgba(128, 40, 236, 0.4);
+  box-shadow: 0px 0px 100px 1px rgba(128, 40, 236, 0.4);
 }
 
 #card1 {
@@ -340,6 +343,7 @@ a {
   background-color: #121212;
   padding-top: 2rem;
 }
+
 .form-headings-container {
   width: 100%;
   display: flex;
@@ -373,6 +377,13 @@ a {
   padding: 2rem 1rem;
   border-radius: 10px;
 }
+.form-wrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 .inner-form-text {
   display: flex;
   justify-content: flex-start;
@@ -390,7 +401,6 @@ a {
 }
 .contant-form {
   display: flex;
-  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
@@ -418,7 +428,12 @@ a {
 .contact-form-image {
   width: 80%;
   margin-top: 3rem;
-  padding: 2rem;
+}
+.hr-align-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hr-before-footer {
   width: 80%;
@@ -493,14 +508,15 @@ a {
     padding: 1rem 0;
     justify-content: center;
     align-items: center;
+    flex-grow: grow;
   }
   .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 40rem;
+    width: 25rem;
     top: 0.7rem;
-    right: 2rem;
+    right: 1rem;
     box-shadow: none;
     padding-inline: 0;
     background-color: transparent;
@@ -517,19 +533,20 @@ a {
     display: none;
   }
   .round-style-button {
-    padding: 0.7rem 3rem;
+    padding: 0.5rem 1rem;
     background-color: #7f28ec;
     border-radius: 2rem;
   }
   .hero-section-container {
+    width: 100vw;
+    height: 100vh;
     flex-direction: row;
   }
   .hero-section-container > img {
     right: 0;
     top: 0;
-    width: fit-content;
+    width: 300px;
   }
-
   .hero-section-container-typos-suptitle {
     font-size: 1rem;
   }
@@ -538,6 +555,161 @@ a {
   }
   .hero-section-container-typos-text {
     font-size: 1rem;
-    width: 55ch;
+  }
+  .why-choose-us-container {
+    background-position: 30rem;
+    padding: 2rem;
+  }
+  .why-choose-us-reasons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .our-services {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .service-card {
+    width: 45%;
+  }
+  .service-cards-container {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .our-services-typos {
+    width: 30rem;
+    padding-left: 1rem;
+  }
+  .why-choose-us-container {
+    background-position: right top;
+  }
+  .form-wrapper {
+    width: fit-content;
+    flex-direction: row;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .form-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-container {
+    flex-direction: row;
+    padding: 4rem 2rem;
+  }
+  .contact-info {
+    position: relative;
+    top: -0.6rem;
+    gap: 0.5rem;
+  }
+  #map {
+    width: 150px;
+    height: 150px;
+  }
+  .logo {
+    width: 25rem;
+  }
+  .quick-links {
+    width: 20rem;
+  }
+  .contact-info {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    padding: 2rem;
+  }
+  .hero-section-container {
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .hero-section-container > img {
+    right: 0;
+    top: 0;
+    width: 600px;
+  }
+  .navigation {
+    top: 1.6rem;
+  }
+  .hero-section-container-typos {
+    width: 50%;
+    margin-top: 12rem;
+    margin-left: 1rem;
+  }
+  .our-services-typos {
+    width: 50rem;
+    margin-left: 1rem;
+  }
+  .our-services-heading-text {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .hr-before-footer {
+    width: 90%;
+  }
+  .contact-form-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .form-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .form-wrapper {
+    padding: 1rem;
+  }
+  .form-headings-container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 2rem;
+  }
+  .contact-form-image {
+    width: 550px;
+    height: 550px;
+  }
+  .inner-form-text p {
+    font-size: 1rem;
+    width: 40ch;
+  }
+  #map {
+    width: 450px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .why-choose-us-reasons {
+    width: 100%;
+  }
+  .our-services {
+    flex-direction: row;
+    align-items: center;
+  }
+  .form-container {
+    padding: 3rem 1rem;
+  }
+  .form-wrapper {
+    justify-content: space-evenly;
+  }
+  .form-headings-container {
+    margin: 2rem 0 0 10rem;
+  }
+  .contact-form-container {
+    padding-block: 4rem;
+  }
+  .footer-container {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+}
+@media (min-width: 1920px) {
+  .form-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10rem;
+    gap: 20rem;
+    margin-bottom: 3rem;
   }
 }
