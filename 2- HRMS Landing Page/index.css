@@ -713,3 +713,12 @@ a {
     margin-bottom: 3rem;
   }
 }
+
+/* Define the CSS class for field styling */
+.input-error {
+  outline: 1px solid red;
+}
+
+.input-valid {
+  outline: 2px solid green; /* You can customize this to the desired valid style */
+}
