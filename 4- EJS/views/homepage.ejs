@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/images/icons/logo.svg" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="/js/index.js" type="text/javascript"></script>
+    <script defer src="/js/validation.js" type="text/javascript"></script>
+    <title>PeoplePulse | Home</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="logo-navigation-container">
+            <div class="header-logo">
+                <img src="/images/icons/logo.svg" alt="site-logo" />
+                <h3>PeoplePulse Ltd.</h3>
+            </div>
+            <div class="nav-bar">
+                <button>
+                    <i><img class="open" src="/images/icons/hamburger.svg" alt="nav-open" /></i>
+                    <i><img class="close" src="/images/icons/close.svg" alt="nav-open" /></i>
+                </button>
+                <div class="navigation hide">
+                    <ul>
+                        <li class="nav-items"><a href="">Home</a></li>
+                        <li class="nav-items"><a href="">About Us</a></li>
+                        <li class="nav-items"><a href="" class="round-style-button">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section-container">
+        <div class="hero-section-container-typos">
+            <p class="hero-section-container-typos-suptitle">AWARD WINNING SOFTWARE DEVELOPMENT</p>
+            <h1>The Best HR Solutions For Your Business</h1>
+            <p class="hero-section-container-typos-text">We provide the wide range of high quality IT services and best
+                practices solutions to our customers
+                making
+                their business better</p>
+            <button class="round-button"><a href="">Get A Quote</a></button>
+        </div>
+        <img class="hero-section-image" src="/images/illustrations/rocket_mobile.svg" alt="">
+    </div>
+    <div class="why-choose-us-container">
+        <div class="why-choose-us-heading">
+            <p class="why-choose-us-suptitle">
+                BEST IN OUR FIELD
+            </p>
+            <h3>WHY <span class="highlighted">CHOOSE</span> US</h3>
+        </div>
+        <div class="why-choose-us-reasons">
+            <div class="card" id="card1"><img src="/images/icons/24-hrs.svg" alt="">
+                <p class="reason">GET A QUOTE IN 24HRS</p>
+            </div>
+            <div class="card" id="card2" id="card"><img src="/images/icons/rocket.svg" alt="">
+                <p class="reason">MVP WITHIN 2 WEEKS</p>
+            </div>
+            <div class="card" id="card3"><img src="/images/icons/technical_support.svg" alt="">
+                <p class="reason">KICKSTART HR MANAGEMENT</p>
+            </div>
+            <div class="card" id="card4"><img src="/images/icons/message.svg" alt="">
+                <p class="reason">24/7 BUSINESS SUPPORT</p>
+            </div>
+        </div>
+    </div>
+    <div class="our-services">
+        <div class="our-services-typos">
+            <div class="our-services-heading-container">
+                <p class="our-services-suptitle">OUR SERVICES</p>
+                <h3 class="our-services-heading-text">Bringing <span class="highlighted">real</span> solutions</h3>
+            </div>
+            <p class="our-services-text">We are focused on helping you grow through a digital transformation. We bring
+                real solutions to each client’s problems through a deep understanding of their market, solution, and
+                vision.</p>
+            <button class="service-cta">Get A Quote</button>
+        </div>
+        <div class="service-cards-container">
+            <div class="service-card" id="service-card-1">
+                <div class="service-card-heading"><img src="/images/icons/service-1.svg" alt="" class="service-logo">
+                    <h3 class="service-heading">Custom HR Solutions</h3>
+                </div>
+                <div class="service-description">
+                    <p class="service-description-1">We use the latest technologies to deliver high quality custom
+                        applications which are to unique
+                        requirements</p>
+                </div>
+                <button id="srv-button-1" class="expand-collapse">Read More <img src="/images/icons/arrow-right.png"
+                        class="arrow-right" alt=""></button>
+            </div>
+            <div class="service-card" id="service-card-2">
+                <div class="service-card-heading"><img src="/images/icons/service-2.svg" alt="" class="service-logo">
+                    <h3 class="service-heading">HR Software Integration</h3>
+                </div>
+                <div class="service-description">
+                    <p class="service-description-2">As a business continues to grow, executive teams may need to
+                        utilize multiple software solutions
+                        to improve their management</p>
+                </div>
+                <button id="srv-button-2" class="expand-collapse">Read More <img src="/images/icons/arrow-right.png"
+                        class="arrow-right" alt=""></button>
+            </div>
+            <div class="service-card" id="service-card-3">
+                <div class="service-card-heading"><img src="/images/icons/service-3.svg" alt="" class="service-logo">
+                    <h3 class="service-heading">HR Mobile App</h3>
+                </div>
+                <div class="service-description">
+                    <p class="service-description-3">Mobile Application development involves creating software
+                        applications that run on mobile device.
+                    </p>
+                </div>
+                <button id="srv-button-3" class="expand-collapse">Read More <img src="/images/icons/arrow-right.png"
+                        class="arrow-right" alt=""></button>
+            </div>
+            <div class="service-card" id="service-card-4">
+                <div class="service-card-heading"><img src="/images/icons/service-4.svg" alt="" class="service-logo">
+                    <h3 class="service-heading">Employee Web Portal</h3>
+                </div>
+                <div class="service-description">
+                    <p class="service-description-4">We combine expert website design, SEO and Conversion Rate
+                        Optimization to ensure your site is
+                        found.</p>
+                </div>
+                <button id="srv-button-4" class="expand-collapse">Read More <img src="/images/icons/arrow-right.png"
+                        class="arrow-right" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <div class="why-choose-us-container" id="">
+        <div class="why-choose-us-heading">
+            <p class="why-choose-us-suptitle">
+                BEST IN OUR FIELD
+            </p>
+            <h3>OUR <span class="highlighted">EXPERTISE</span></h3>
+        </div>
+        <div class="why-choose-us-reasons">
+            <div class="card" id="card5"><img src="/images/icons/talent_acquisition.svg" alt="">
+                <p class="reason">TALENT ACQUISITION</p>
+            </div>
+            <div class="card" id="card6" id="card"><img src="/images/icons/payroll-management.svg" alt="">
+                <p class="reason">PAYROLL MANAGEMENT</p>
+            </div>
+            <div class="card" id="card7"><img src="/images/icons/workforce-management.svg" alt="">
+                <p class="reason">WORKFORCE MANAGEMENT</p>
+            </div>
+            <div class="card" id="card8"><img src="/images/icons/ellipses.svg" alt="">
+                <p class="reason">AND MUCH MORE</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form-container">
+        <div class="form-headings-container">
+            <h3 class="form-heading-suptitle">CONTACT US</h3>
+            <h3 class="form-heading">Let's <span class="highlighted">talk</span> !</h3>
+            <p>Want to work with us?</p>
+        </div>
+        <div class="form-wrapper">
+            <div class="form-container">
+                <div class="inner-form-text">
+                    <h3>Send Us A Message</h3>
+                    <p>Reach out to us and let's start a conversation that could make a difference</p>
+                </div>
+                <form action="" class="contant-form">
+                    <div class="name-field">
+                        <input class="input-field" id="name" placeholder="Name" type="text">
+                    </div>
+                    <div class="email-field">
+                        <input class="input-field" id="email" placeholder="Email" type="email">
+                    </div>
+                    <div class=" message-area">
+                        <textarea class="input-field" id="message-area" placeholder="Message"></textarea>
+                    </div>
+                    <button class="round-button" id="contact-form-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+            <img class="contact-form-image" src="/images/illustrations/contact_us_illustration.svg" alt="">
+        </div>
+        <div class="hr-align-center">
+            <hr class="hr-before-footer">
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="logo">
+            <div class="logo_heading">
+                <img src="/images/icons/logo.svg" alt="site-logo" />
+                <h3>PeoplePulse Ltd.</h3>
+            </div>
+            <p class="footer-typo">Discover People Pulse Limited: Your HR Management Partner. Tailored solutions for
+                talent development, recruitment, performance management, and consulting. Unlock your workforce potential
+                today.
+            </p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>About Us</li>
+                <li><a href=""></a>Contact Us</li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contacts</h3>
+            <p>+92 3000000000</p>
+            <p><a href="">sales@peoplepulse.com</a></p>
+        </div>
+        <div class="location-map">
+            <h3>Location</h3>
+            <div id="map"></div>
+        </div>
+    </div>
+</body>
+
+</html>
